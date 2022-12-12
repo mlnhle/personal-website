@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  float: center;
+}
+
+h3 {
+  font-family: monospace;
+  font-size: x-large;
+}
+
+p {
+  text-align: left;
+}
+
+nav {
+  display: flex;
+  width: 84%;
+  margin: auto; 
+  padding: 20px 0;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+/*EXPANDING THE ASSIGNMENT (From Forms & Tables Assignment): I added more hover 
+effects to the menu/nav bar so these effects are seen across the website wherever
+there is a menu bar. */
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  position: relative;
+  padding: 5px 0;
+  overflow: hidden;
+  transition: .3s;
+}
+
+nav ul li a:before {
+  content: '';
+  position: absolute;
+  top: 0%;
+  right: 100%;
+  width: 50%;
+  height: 2px;
+  background: pink;
+  transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+nav ul li a:after {
+  content: '';
+  position: absolute;
+  bottom: 0%;
+  left: 100%;
+  width: 50%;
+  height: 2px;
+  background: pink;
+  transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+nav ul li a:hover {
+  color: pink;
+}
+
+nav ul li a:hover:before {
+  right: 0;
+}
+
+nav ul li a:hover:after {
+  left: 0;
+}
+
+/* END OF EXPANDING THE ASSIGNMENT (Forms & Tables): I added more hover effects to the 
+menu/nav bar so these effects are seen across the website wherever
+there is a menu bar. */
+
+button {
+  background-color: pink;
+	padding: 5px;
+	display: inline-block;
+	color: white;
+	text-align: center;
+	font-size: 15px;
+	width: 150px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+}
+
+button:hover {
+	box-shadow: 0 10px 12px rgb(246, 119, 138);
+	color: white;
+	background-color: rgb(252, 131, 151)
+}
+
+.table {
+float: left;
+margin-left: 5px;
+max-width: 700px;
+}
+
+th { 
+  text-align: center;
+  background-color: rgb(255, 218, 226);
+  font-style: bold;
+}
+td {
+  text-align: center;
+}
+table, th, td {
+  border: 1px solid;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+}
+tr:nth-last-child(odd) {
+  background-color: #FFFF;
+}
+tr:nth-last-child(even) {
+  background-color: #fff5fa;
+}
+
+aside { 
+  grid-area: aside;
+  text-align: center;
+}
+
+aside h1 {
+  text-align: center;
+}
+
+aside p {
+  text-align: center;
+}
+
+.FavoriteCourses {
+  min-height: 50px;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minh Le Contact</title>
+    <link rel="stylesheet" href="contact.css" />
+</head>
+<div class="menu">
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="resume.html">RESUME</a></li>
+            <li><a href="courses.html">COURSES</a></li>
+            <li><a href="contact.html">CONTACT ME</a></li>
+        </ul>
+    </nav>
+</div>
+<body>
+<form action="mailto:nhatminh.le@ucdenver.edu" method="POST" id="contact" name="frmContact"
+    <input type="hidden" name="txtH" value="Contact Form" />
+<div class="container">
+    <div class="title"><b>Let's Keep In Touch!</div>
+    <br>
+    <div class="formRow">
+        <label for="tn">Full Name</label>
+        <input type="text" placeholder="Enter your name" name="txtName" id="tn" size="40"/>
+    </div>
+    <div class="formRow">
+        <label for="te">Email Address</label>
+        <input type="email" placeholder="Enter your email" name="txtEmail" id="te" size="55"/>
+    </div>
+    <div class="formRow">
+        <label for="tp">Phone Number</label>
+        <input type="tel" placeholder="Enter your number" name="txtPhone" id="tp" size="25"/>
+    </div>
+    <div class="formRow">
+        <label for="lo">Occupation</label>
+        <select name="lstOccu" id="lo">
+            <option>Student</option>
+            <option>Instructor</option>
+            <option>Recruiter</option>
+            <option>Other</option>
+        </select>
+    </div>
+    <div class="formRow">
+    <label id="lsug" for="tsug">Comments</label><br />
+    <textarea name="suggest" id="tsug" rows="5" cols="80"></textarea>
+    <br />
+    </div>
+    <div class="buttonRow">
+        <input type="submit" value="Submit" />&nbsp;&nbsp;
+        <input type="reset" value="Reset" />
+    </div>
+</div>
+</body>
+</form>
